@@ -1,0 +1,20 @@
+/* Basic responsive portfolio styles */
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#4f46e5;
+  --text:#e6eef6;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:var(--text);background:linear-gradient(180deg,var(--bg),#071028)}
+.container{max-width:900px;margin:0 auto;padding:24px}
+.site-header{padding:40px 0;text-align:center}
+.site-header h1{margin:0;font-size:2.2rem}
+.tagline{color:var(--muted);margin-top:8px}
+main{padding-bottom:48px}
+section{background:rgba(255,255,255,0.02);border-radius:8px;padding:18px;margin:18px 0}
+.projects-list{list-style:none;padding:0;margin:0}
+.projects-list li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.02)}
+.site-footer{text-align:center;padding:18px;color:var(--muted)}
+@media(min-width:700px){.site-header h1{font-size:3rem}.container{padding:32px}}

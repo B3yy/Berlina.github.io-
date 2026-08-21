@@ -3,172 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Berlina Rasekgololo — Portfolio</title>
-  <meta name="description" content="Portfolio of Berlina Rasekgololo — aspiring web developer.">
-  <link rel="stylesheet" href="/assets/styles.css">
-  <link rel="icon" href="/assets/favicon.svg">
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <header class="nav-wrap">
-    <div class="container nav">
-      <a class="brand" href="#home">Berlina R.</a>
-      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
-      <nav id="nav" class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <header class="site-header">
+    <div class="container">
+      <h1>Your Name</h1>
+      <p class="tagline">Frontend developer • Designer • Problem solver</p>
     </div>
   </header>
 
-  <main>
-    <!-- HOME -->
-    <section id="home" class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Hi — I’m Berlina Rasekgololo</h1>
-          <p class="lead">Aspiring web developer building modern, responsive web experiences. Currently learning front-end and full-stack web development while working on personal projects.</p>
-          <p class="actions">
-            <a class="btn primary" href="#projects">View projects</a>
-            <a class="btn" href="/Berlina.github.io-/assets/BERLINA_RASEKGOLOLO_Resume.pdf" download>Download CV</a>
-          </p>
-        </div>
-        <div class="hero-card">
-          <img alt="Profile placeholder" src="/assets/profile-placeholder.svg">
-          <ul class="contact-mini">
-            <li><strong>Email:</strong> <a href="mailto:berlinahrasekgololo@gmail.com">berlinahrasekgololo@gmail.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+27619399189">+27 61 939 9189</a></li>
-            <li><strong>Location:</strong> South Africa</li>
-          </ul>
-        </div>
-      </div>
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>Hi — I'm <strong>Your Name</strong>. Replace this paragraph with a short bio describing who you are, what you build, and what you're looking for.</p>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>I am a motivated learner focused on building web applications and improving my development skills. I enjoy turning ideas into clean, accessible user interfaces and learning back-end fundamentals. I am currently working through projects and learning modern JavaScript, version control with Git/GitHub, and deployment workflows.</p>
-      </div>
+    <section id="projects">
+      <h2>Selected projects</h2>
+      <ul class="projects-list">
+        <li>
+          <h3>Project One</h3>
+          <p>Short description and link (replace with your project details).</p>
+        </li>
+        <li>
+          <h3>Project Two</h3>
+          <p>Short description and link.</p>
+        </li>
+      </ul>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section alt">
-      <div class="container grid-2">
-        <div>
-          <h2>Technical Skills</h2>
-          <ul class="skills-list">
-            <li>HTML5 &amp; semantic markup</li>
-            <li>CSS3 (Flexbox, Grid), responsive design</li>
-            <li>JavaScript (ES6+), DOM manipulation</li>
-            <li>Git &amp; GitHub</li>
-            <li>Basic React (in-progress)</li>
-            <li>REST APIs &amp; Fetch</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Soft Skills</h2>
-          <ul class="skills-list">
-            <li>Problem solving</li>
-            <li>Teamwork &amp; communication</li>
-            <li>Time management</li>
-            <li>Willingness to learn</li>
-            <li>Attention to detail</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Projects</h2>
-        <p class="muted">Learning projects in progress — demos and source are available on my GitHub (link below).</p>
-
-        <div class="projects">
-          <article class="project">
-            <h3>Personal Portfolio Website</h3>
-            <p>This website — a responsive portfolio built to showcase projects, skills, and contact information. Focus: accessibility, performance, and clean design.</p>
-            <p class="project-tech"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-          </article>
-
-          <article class="project">
-            <h3>Task Manager (In Progress)</h3>
-            <p>A single-page task manager for creating, editing and tracking tasks with local persistence or cloud sync (future). This project helps practice React fundamentals and state management.</p>
-            <p class="project-tech"><strong>Technologies:</strong> React, JavaScript, CSS, Firebase (planned)</p>
-          </article>
-
-          <article class="project">
-            <h3>Data Visualizer / Dashboard (In Progress)</h3>
-            <p>A small app to ingest CSV data and render charts and summary statistics. Used to practice working with data, simple back-end endpoints, and charting libraries.</p>
-            <p class="project-tech"><strong>Technologies:</strong> Python (Flask), Pandas, Chart.js, HTML/CSS</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education" class="section alt">
-      <div class="container">
-        <h2>Education</h2>
-        <ul class="education-list">
-          <li>
-            <h3>National Senior Certificate</h3>
-            <p>High-school level certificate — National Senior Certificate (Matric)</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- WORK EXPERIENCE -->
-    <section id="work" class="section">
-      <div class="container">
-        <h2>Work Experience</h2>
-        <p>Currently focusing on personal learning projects and building practical experience through hands-on development. Looking for entry-level opportunities and internships to apply my skills.</p>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section alt">
-      <div class="container contact-grid">
-        <div>
-          <h2>Contact</h2>
-          <p>If you'd like to connect or discuss opportunities, please reach out:</p>
-          <ul class="contact-list">
-            <li><strong>Email:</strong> <a href="mailto:berlinahrasekgololo@gmail.com">berlinahrasekgololo@gmail.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+27619399189">+27 61 939 9189</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/B3yy">github.com/B3yy</a></li>
-            <li><strong>LinkedIn:</strong> <span class="muted">Please add your LinkedIn URL</span></li>
-          </ul>
-          <p><a class="btn" href="Berlina.github.io-/assets/BERLINA_RASEKGOLOLO_Resume.pdf" download>Download Resume (PDF)</a></p>
-        </div>
-        <div>
-          <h3>Send a message</h3>
-          <form id="contactForm">
-            <label for="name">Name</label>
-            <input id="name" name="name" required>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <button class="btn primary" type="submit">Send</button>
-            <p class="form-note muted">This form is client-side only — replace with your preferred backend or form service.</p>
-          </form>
-        </div>
-      </div>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/B3yy">@B3yy</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Berlina Rasekgololo — Built with care · <a href="https://github.com/B3yy/Berlina.github.io-">Source</a></p>
+      <p>© 2026 Your Name — Built with ❤️</p>
     </div>
   </footer>
-
-  <script src="/assets/script.js"></script>
 </body>
 </html>
