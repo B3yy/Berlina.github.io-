@@ -1,17 +1,19 @@
-# Berlina.github.io-
+# Portfolio updates
 
-This repository contains a default, ready-to-edit portfolio website published from the repository root (index.html).
+This commit updates the site to include a modern, responsive, and professional structure with the required sections:
 
-How to customize
+- Home (introduction)  
+- About  
+- Technical & soft skills  
+- At least 3 projects  
+- Education  
+- Certifications  
+- Work experience  
+- Contact (email, GitHub, LinkedIn)  
+- Downloadable CV link to assets/BERLINA_RASEKGOLOLO_Resume.pdf (if present)
 
-- Edit index.html: replace "Your Name", bio, projects, and contact info.
-- Add images inside the images/ folder and reference them from index.html (e.g., /images/profile.jpg).
-- CSS is in css/styles.css.
+Files updated:
+- index.html (new modern layout)
+- css/styles.css (updated styling)
 
-Publishing as GitHub Pages
-
-1. Go to Settings → Pages in this repository.
-2. Select the branch "main" and folder "/ (root)", then Save.
-3. Your site will be available at https://B3yy.github.io/Berlina.github.io-/ (or a custom domain if you add CNAME).
-
-If you want, I can add a CNAME or enable Pages for you — tell me the custom domain or grant me permission to change repository settings.
+Deployed: To publish online, enable GitHub Pages (Settings → Pages → Branch: main, Folder: /root) or deploy to Vercel/Netlify. I did not change repository settings.

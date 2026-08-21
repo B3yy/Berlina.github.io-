@@ -1,20 +1,51 @@
-/* Basic responsive portfolio styles */
+/* styles.css — modern responsive portfolio */
 :root{
-  --bg:#0f1724;
+  --bg:#071028;
   --card:#0b1220;
   --muted:#9aa4b2;
-  --accent:#4f46e5;
+  --accent:#8b5cf6;
   --text:#e6eef6;
+  --max-width:1100px;
 }
 *{box-sizing:border-box}
-html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:var(--text);background:linear-gradient(180deg,var(--bg),#071028)}
-.container{max-width:900px;margin:0 auto;padding:24px}
-.site-header{padding:40px 0;text-align:center}
-.site-header h1{margin:0;font-size:2.2rem}
-.tagline{color:var(--muted);margin-top:8px}
-main{padding-bottom:48px}
-section{background:rgba(255,255,255,0.02);border-radius:8px;padding:18px;margin:18px 0}
-.projects-list{list-style:none;padding:0;margin:0}
-.projects-list li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.02)}
-.site-footer{text-align:center;padding:18px;color:var(--muted)}
-@media(min-width:700px){.site-header h1{font-size:3rem}.container{padding:32px}}
+html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:var(--text);background:linear-gradient(180deg,var(--bg),#0b1220)}
+.container{max-width:var(--max-width);margin:0 auto;padding:24px}
+.site-header{background:transparent;padding:14px 0;position:sticky;top:0;z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700;color:var(--text);text-decoration:none}
+.nav-links{display:flex;gap:18px}
+.nav-links a{color:var(--muted);text-decoration:none}
+.nav-toggle{display:none;background:none;border:0;color:var(--text);font-size:1.2rem}
+.hero{padding:48px 0}
+.hero-grid{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start}
+.hero-content h1{margin:0;font-size:2.2rem}
+.lead{color:var(--muted);margin-top:12px}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;margin-right:8px}
+.primary{background:var(--accent);color:white}
+.outline{border:1px solid rgba(255,255,255,0.06);color:var(--text);background:transparent}
+.card{background:rgba(255,255,255,0.03);padding:16px;border-radius:10px}
+.section{padding:36px 0}
+.section h2{margin-top:0}
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.project{background:rgba(255,255,255,0.02);padding:16px;border-radius:8px;margin-bottom:16px}
+.muted{color:var(--muted)}
+.timeline{display:grid;gap:16px}
+.timeline-item{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px}
+.site-footer{padding:28px 0;text-align:center;color:var(--muted)}
+.project-links a{color:var(--accent)}
+
+/* Responsive */
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-aside{order:2}
+}
+@media(max-width:700px){
+  .nav-links{display:none}
+  .nav-links.open{display:flex;flex-direction:column;position:absolute;right:24px;top:64px;background:var(--card);padding:12px;border-radius:8px}
+  .nav-toggle{display:block}
+  .container{padding:16px}
+  .hero-content h1{font-size:1.8rem}
+}
+
+/* Accessibility */
+a:focus{outline:3px solid rgba(139,92,246,0.25);outline-offset:2px}

@@ -3,48 +3,176 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Your Name — Portfolio</title>
+  <title>Berlina Rasekgololo — Digital Product Portfolio</title>
+  <meta name="description" content="Berlina Rasekgololo — Product & Frontend portfolio. Selected projects, skills, and contact details.">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/favicon.ico">
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1>Your Name</h1>
-      <p class="tagline">Frontend developer • Designer • Problem solver</p>
+    <div class="nav container">
+      <a class="brand" href="#home">Berlina Rasekgololo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section id="about">
-      <h2>About</h2>
-      <p>Hi — I'm <strong>Your Name</strong>. Replace this paragraph with a short bio describing who you are, what you build, and what you're looking for.</p>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Hi, I'm Berlina Rasekgololo</h1>
+          <p class="lead">Product-focused frontend practitioner building reliable customer-facing web experiences and operational workflows. I design and ship features that are usable, accessible, and measurable.</p>
+          <p class="cta">
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn outline" href="/assets/Berlina_Rasekgololo_Portfolio.pptx" download>Download Slides</a>
+            <a class="btn outline" href="/assets/BERLINA_RASEKGOLOLO_Resume.pdf" download>Download CV</a>
+          </p>
+        </div>
+        <div class="hero-aside">
+          <div class="card">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:berlinahrasekgololo@gmail.com">berlinahrasekgololo@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/B3yy" target="_blank" rel="noopener">github.com/B3yy</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener">linkedin.com/in/your-linkedin</a></p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Selected projects</h2>
-      <ul class="projects-list">
-        <li>
-          <h3>Project One</h3>
-          <p>Short description and link (replace with your project details).</p>
-        </li>
-        <li>
-          <h3>Project Two</h3>
-          <p>Short description and link.</p>
-        </li>
+    <section id="about" class="container section">
+      <h2>About Me</h2>
+      <p>I am a product- and frontend-focused practitioner with hands-on experience improving customer-facing flows and internal operational tools. I enjoy working cross-functionally with product, design, and operations to ship pragmatic solutions that improve outcomes.</p>
+    </section>
+
+    <section id="skills" class="container section">
+      <h2>Technical & Soft Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Technical</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript (ES6+)</li>
+            <li>Responsive design, accessibility (a11y)</li>
+            <li>Git, GitHub, basic CI & deployments</li>
+            <li>Figma (design handoff), Chrome DevTools</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Problem solving & troubleshooting</li>
+            <li>Clear communication & documentation</li>
+            <li>Collaboration with cross-functional teams</li>
+            <li>Customer-focused iteration</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Selected Projects</h2>
+
+      <article class="project">
+        <h3>Retail Operations Portal</h3>
+        <p class="muted">Role: Cash Office / Operations — Technologies: HTML, CSS, JS, Git</p>
+        <p>Built and improved internal workflows for cash handling, reconciliation, and reporting. Focused on reducing manual errors and surfacing exceptions for faster resolution.</p>
+        <ul>
+          <li>Implemented automated reconciliation checks to reduce manual work.</li>
+          <li>Improved reporting UI for shift managers to quickly spot anomalies.</li>
+        </ul>
+        <p class="project-links">Repo: <a href="https://github.com/B3yy/Berlina.github.io-" target="_blank" rel="noopener">Project files (sample)</a></p>
+      </article>
+
+      <article class="project">
+        <h3>Customer Service Dashboard</h3>
+        <p class="muted">Role: Switchboard Operator / Support — Technologies: HTML, CSS, JS</p>
+        <p>Improved routing and logging of customer requests by standardizing call notes and implementing interface changes to capture critical fields.</p>
+        <ul>
+          <li>Reduced average response time by improving routing logic and operator workflows (placeholder metric).</li>
+          <li>Increased quality of logged incidents enabling better follow-up.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <h3>Point of Sale Flow Improvements</h3>
+        <p class="muted">Role: Cashier / Frontline — Technologies: UX improvements, UI tweaks</p>
+        <p>Worked on customer-facing point-of-sale flows to speed up checkout and reduce transaction errors through small UI improvements and clearer messaging.</p>
+        <ul>
+          <li>Optimized key touchpoints in the POS flow to reduce friction.</li>
+          <li>Improved in-store prompts to reduce common cashier errors.</li>
+        </ul>
+      </article>
+
+    </section>
+
+    <section id="experience" class="container section">
+      <h2>Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Cash Office Clerk</h3>
+          <p class="muted">Retail Company — Dates</p>
+          <p>Managed daily reconciliations, cash handling processes, and reporting. Collaborated with managers to identify process improvements.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Switchboard Operator</h3>
+          <p class="muted">Company — Dates</p>
+          <p>Handled inbound requests, routed calls efficiently, and maintained call logs for follow-up and escalation.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Cashier</h3>
+          <p class="muted">Company — Dates</p>
+          <p>Customer-facing cashier role focused on POS flows, customer service, and quick problem resolution.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="container section">
+      <h2>Education</h2>
+      <p><strong>Institution Name</strong> — Qualification (Year)</p>
+      <p>Add your degree, institution, and years here.</p>
+    </section>
+
+    <section id="certifications" class="container section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Certification Name — Issuer (Year)</li>
+        <li>Certification Name — Issuer (Year)</li>
       </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="container section">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/B3yy">@B3yy</a></p>
+      <p>Email: <a href="mailto:berlinahrasekgololo@gmail.com">berlinahrasekgololo@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/B3yy" target="_blank" rel="noopener">github.com/B3yy</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener">linkedin.com/in/your-linkedin</a></p>
     </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Your Name — Built with ❤️</p>
+      <p>© 2026 Berlina Rasekgololo — Built with care</p>
     </div>
   </footer>
+
+  <script>
+    // nav toggle for mobile
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      navLinks.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
